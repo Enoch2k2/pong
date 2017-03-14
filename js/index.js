@@ -36,7 +36,7 @@ function movePlayer(e){
 function movePlayerUp(){
   // animate player up
   window.requestAnimationFrame(function(){
-    if(player[1] > 0){
+    if(player[1] > 20){
       player[1] -= 10;
     }
   });
@@ -45,7 +45,7 @@ function movePlayerUp(){
 function movePlayerDown(){
   // animate player down
   window.requestAnimationFrame(function(){
-    if(player[1] < GAME_HEIGHT - 75){
+    if(player[1] < GAME_HEIGHT - 95){
       player[1] += 10;
     }
   });
