@@ -1,0 +1,32 @@
+#game {
+  position: relative;
+  border: 1px solid black;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+h3 {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  top: 0;
+}
+
+a.text {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  top: 4rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: teal;
+}
+
+canvas {
+  display: none;
+}
