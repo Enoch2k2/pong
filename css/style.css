@@ -30,3 +30,19 @@ a:hover {
 canvas {
   display: none;
 }
+
+li#playerScore {
+  display: inline-block;
+  float: left;
+  color: blue;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+li#computerScore {
+  display: inline-block;
+  float: right;
+  color: red;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}

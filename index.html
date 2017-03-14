@@ -5,7 +5,11 @@
     <title>PONG HTML5 PRACTICE</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body onload="drawGame()">
+  <body>
+    <ul id="score">
+      <li id="playerScore"></li>
+      <li id="computerScore"></li>
+    </ul>
     <div id='game' style="background-color: black">
       <h3 id="welcome">Welcome to Pong!</h3>
       <a href="javascript: start()" class='text' id='start'>Start</a>
