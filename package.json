@@ -2,9 +2,14 @@
   "name": "practice",
   "version": "1.0.0",
   "description": "Canvas Practice",
-  "main": "index.js",
+  "main": "js/index.js",
+  "engines": {
+    "node": "6.9.5",
+    "npm": "3.10.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "python -m SimpleHTTPServer"
   },
   "author": "Enoch Griffith",
   "license": "ISC"
