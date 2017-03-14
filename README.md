@@ -5,8 +5,3 @@ In the terminal type `python -m SimpleHTTPServer` to start server. Then navigate
 
 ## Controls
 Up and Down arrow keys to move player.
-
-## To do:
-Add AI player movement and functionality.
-
-Add ball movement and physics.
