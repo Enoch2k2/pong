@@ -1,17 +1,18 @@
-var express = require("express");
-var app     = express();
-var path    = require("path");
-app.use(express.static(__dirname+'/js'));
-app.use(express.static(__dirname+'/css'));
-app.use(express.static(__dirname));
-//Lets define a port we want to listen to
+var express = require('express');
+var app = express();
 
-//We need a function which handles requests and send response
+app.set('port', (process.env.PORT || 5000));
 
-app.get('/',function(req,res){
-  res.sendFile('index.html');
-  //__dirname : It will resolve to your project folder.
+app.use(express.static(__dirname + '/public'));
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+app.get('/', function(request, response) {
+  response.render('pages/index');
 });
 
-app.listen(8080);
-console.log("Running on port: 8080")
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
