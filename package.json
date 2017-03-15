@@ -2,7 +2,7 @@
   "name": "practice",
   "version": "1.0.0",
   "description": "Canvas Practice",
-  "main": "js/index.js",
+  "main": "server.js",
   "engines": {
     "node": "6.9.5",
     "npm": "3.10.x"
