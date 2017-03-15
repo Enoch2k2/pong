@@ -74,9 +74,9 @@ Player.prototype.update = function () {
   for(var key in keysDown){
     var value = Number(key);
     if(value == UP_ARROW){
-      this.paddle.move(0, -4);
+      this.paddle.move(0, -5);
     } else if (value == DOWN_ARROW){
-      this.paddle.move(0, 4);
+      this.paddle.move(0, 5);
     } else {
       this.paddle.move(0, 0);
     }
