@@ -19,10 +19,14 @@ function start(){
   PLAYER_SCORE.innerHTML = 'Player Score: 0';
   COMPUTER_SCORE.innerHTML = 'Computer Score: 0';
   window.addEventListener("keydown", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
     keysDown[event.keyCode] = true;
   });
 
   window.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
     delete keysDown[event.keyCode];
   });
   animate(step);
@@ -74,9 +78,9 @@ Player.prototype.update = function () {
   for(var key in keysDown){
     var value = Number(key);
     if(value == UP_ARROW){
-      this.paddle.move(0, -5);
+      this.paddle.move(0, -5.25);
     } else if (value == DOWN_ARROW){
-      this.paddle.move(0, 5);
+      this.paddle.move(0, 5.25);
     } else {
       this.paddle.move(0, 0);
     }
